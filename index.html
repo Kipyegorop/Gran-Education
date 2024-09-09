@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gran Education - IELTS Training</title>
+    <!-- Tailwind CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <!-- Font Awesome for Icons -->
+    
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link href="./index.css" rel="stylesheet">
+    <style>
+        .hover\:animate-zoom:hover {
+            animation: zoom 0.9s;
+        }
+    
+        @keyframes zoom {
+            0% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.1);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+
+/* Typing effect */
+
+        @keyframes typing {
+            from { width: 0; }
+            to { width: 100%; }
+        }
+
+        /* Hide the blinking cursor */
+        @keyframes blink {
+            0% { border-right-color: transparent; }
+        }
+
+        .typing-effect {
+            font-style: italic; /* Italic font style */
+            white-space: nowrap; /* Prevent text wrapping */
+            overflow: hidden; /* Hide overflowing text */
+            border-right: 2px solid transparent; /* Simulate cursor, make transparent */
+            width: 0; /* Initially hide the text */
+            animation: typing 3s steps(40, end) forwards, blink 1s step-end infinite; /* Typing effect */
+        }
+
+          /* CSS for the gallery hover effect */
+          .gallery-item {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .gallery-item img {
+            transition: all 0.3s ease;
+            width: 100%;
+            display: block;
+        }
+
+        .gallery-item img.bw {
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 10;
+            filter: grayscale(100%);
+            transition: all 0.5s ease;
+        }
+
+        .gallery-item:hover img.bw {
+            opacity: 0;
+        }
+    </style>
+</head>
+
+<body class="bg-white text-black">
+    <!-- Navbar -->
+    <nav class="bg-white bg-opacity-50 backdrop-filter backdrop-blur-lg shadow-md fixed w-full z-10">
+        <div class="container mx-auto px-4 flex justify-between items-center py-3">
+            <div class="text-2xl font-bold text-primary">
+                <i class="fas fa-book"></i>
+                Gran Education
+                <br>
+                <p class="text-sm">own your future</p>
+            </div>
+            <div>
+                <ul class="flex space-x-4">
+                    <li><a href="#home" class="text-black hover:text-primary">Home</a></li>
+                    <li><a href="#about" class="text-black hover:text-primary">About</a></li>
+                    <li><a href="#courses" class="text-black hover:text-primary">Courses</a></li>
+                    <li><a href="#contact" class="text-black hover:text-primary">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+<!-- Hero Section -->
+<section id="home" class="bg-cover bg-blue-200 bg-center h-screen flex items-center justify-center animate__animated animate__zoomIn"
+style="background-image: url('/imagesbg.jpg');" data-duration="3.5s">
+    <div class="flex flex-col md:flex-row justify-between items-center w-11/12 mx-auto">
+        <div class="w-full md:w-1/3 p-4">
+            <img src="./images/img.jpg" alt="Image" class="w-full h-auto animate__animated animate__fadeInLeft hover:zoomin">
+        </div>
+        <div class="w-full md:w-2/3 p-4 text-center text-black ease-in">
+            <h1 class="text-5xl font-bold mb-4">Unlock Your Future with Expert IELTS Training!</h1>
+            <p class="text-xl mb-6">Achieve your dreams with expert guidance and comprehensive courses.</p>
+            <i class="fab fa-whatsapp" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full"></i>
+            <a href="//wa.me/254795553008?text=Hello%20Gran%20Education,%20I%20am%20interested%20in%20your%20IELTS%20courses,%20please%20can%20I%20learn%20more?" 
+            >Enroll Today</a>
+            </i>
+                <br>
+            
+            <br>
+            <p class="typing-effect">Do ONE THING at a time with supreme EXCELLENCE</p>
+        </div>
+    </div>
+</section>
+
+<!-- CSS -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
+
+<!-- JavaScript -->
+<script src="script.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>
+
+
+    <!-- About Us Section -->
+    <section id="about" class=" bg-blue-100 mx-auto px-10 py-10">
+        <h2 class="text-3xl font-bold text-primary mb-6 text-center"> Want to study IELTS?</h2>
+        <BR>
+            <p class="text-lg text-gray-600 mb-6 text-center">
+                At Gran Education, we’re dedicated to helping you achieve your dreams of studying, working, or living abroad.
+                 Our comprehensive IELTS training program is tailored to your needs, 
+                ensuring you excel in every test module—
+                <b> Reading, Writing, Speaking, and Listening.</b></p>
+                 
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
+                <div class="bg-yellow-200 p-10 rounded-full shadow-md hover:animate-zoom">
+                    <h3 class="text-xl font-bold text-primary mb-2">Access to revision materials.</h3>
+                </div>
+                <div class="bg-yellow-300 p-10 rounded-full shadow-md hover:animate-zoom">
+                    <h3 class="text-xl font-bold text-primary mb-2">Flexible online & physical classes.</h3>
+                    <p class="text-black mb-4"></p>
+                </div>
+                <div class="bg-yellow-400 p-10 rounded-full shadow-md  hover:animate-zoom">
+                    <h3 class="text-xl font-bold text-primary mb-2">Experienced tutors giving you individual attention.</h3>
+                    <p class="text-black mb-4"></p>
+                </div>
+            </div>
+            </div>
+            <br>
+            <br>
+            <div>
+            <p class="text-black text-center">Gran Education offers expert IELTS training to help you achieve your
+            language proficiency goals. Our experienced instructors and comprehensive courses are designed to provide you
+            with the skills and confidence needed to excel in the IELTS exam.</p></div>
+    </section>
+
+    <!-- Courses Section -->
+    <section id="courses" class="bg-blue-100 py-12">
+        <div class="container mx-auto px-1">
+            <h2 class="text-3xl font-bold text-primary mb-6 text-center">Overview of Our IELTS Preparation Course    </h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <!--Reading sction -->
+                <div class="bg-white p-6 rounded-lg shadow-md shadow-md hover:animate-zoom">
+                    <h3 class="text-xl font-bold text-primary mb-2">
+                        <i class="fas fa-book"></i>
+                        READING MASTERY
+                    </h3>
+                    <p class="text-black mb-4">Our course starts with the Reading section, where we focus on strategies to understand complex texts quickly, and discern main ideas, and details from academic and real-world materials. We'll teach you how to manage your time efficiently, tackle different types of questions, and improve your scanning and skimming abilities.</p>
+                    <a href="#" class="text-primary hover:text-blue-700 font-bold">Enroll now...</a>
+                </div>
+                <!-- writing section -->
+                <div class="bg-white p-6 rounded-lg shadow-md shadow-md hover:animate-zoom">
+                        <h3 class="text-xl font-bold text-primary mb-2">
+                            <i class="fas fa-pen"></i>
+                            WRITING WORKSHOPS
+                        </h3>
+                        <p class="text-black mb-4">In the Writing section, we guide you through effectively organizing your thoughts, crafting clear and coherent essays, and handling Task 1 and Task 2 with confidence. You'll learn how to respond to charts and graphs as well as how to express your opinion in an argumentative essay. Our feedback sessions are designed to polish your writing skills and improve your grammatical range and accuracy.</p>
+                        <a href="#" class="text-primary hover:text-blue-700 font-bold">Enroll now...</a>
+                    </div>
+                    <!--listening section-->
+                <div class="bg-white p-6 rounded-9000 shadow-md shadow-md hover:animate-zoom">
+                    <h3 class="text-xl font-bold text-primary mb-2">
+                        <i class="fas fa-headphones"></i>
+                        LISTENING LAB
+                    </h3>
+                    <p class="text-black mb-4">Our Listening component is geared towards enhancing your ability to follow English conversations and lectures. We simulate real exam conditions with a variety of accents and speeds, teaching you note-taking strategies and how to listen for specific information and general ideas. Our practice sessions will help you become familiar with the exam format, question types, and the best techniques to maximize your score.</p>
+                    <a href="#" class="text-primary hover:text-blue-700 font-bold">Enroll now...</a>
+                </div>
+                <!--Speaking section-->
+                <div class="bg-white p-6 rounded-lg shadow-md shadow-md hover:animate-zoom">
+                    <h3 class="text-xl font-bold text-primary mb-2">
+                        <i class="fas fa-microphone"></i>
+                        SPEAKING SIMULATIONS
+                    </h3>
+                    <p class="text-black mb-4">For the Speaking section, we provide a supportive environment where you can practice speaking about familiar topics, expressing opinions, and discussing abstract ideas. You'll engage in one-on-one mock exams with our instructors, receive constructive feedback, and learn how to improve your fluency, pronunciation, and lexical resource.</p>
+                    <a href="#" class="text-primary hover:text-blue-700 font-bold">Enroll now...</a>
+                </div>  
+                <!--Library resource-->
+                <div class="bg-white p-6 rounded-lg shadow-md shadow-md hover:animate-zoom">
+                    <h3 class="text-xl font-bold text-primary mb-2">
+                        <i class="fas fa-book"></i>
+                        LIBRARY RESOURCE
+                    </h3>
+                    <p class="text-black mb-4">Access to our extensive library of resources, including practice tests, sample answers, and instructional materials, is provided. These resources are selected to give you a comprehensive understanding of the IELTS exam and to support your study plan.
+                    </p>
+                    <a href="#" class="text-primary hover:text-blue-700 font-bold">Enroll now...</a>
+                </div>  
+                <!--Stratgy section-->
+                <div class="bg-white p-6 rounded-lg shadow-md shadow-md hover:animate-zoom">
+                    <h3 class="text-xl font-bold text-primary mb-2">
+                        <i class="fas fa-chart-line"></i>
+                        STRATEGY SESSIONS
+                    </h3>
+                    <p class="text-black mb-4">Beyond the core skills, our course includes strategy sessions that cover test-taking techniques, time management, and how to approach each section of the exam with confidence. These sessions are crucial for turning knowledge into performance on exam day.
+                    </p>
+                    <a href="#" class="text-primary hover:text-blue-700 font-bold">Enroll now...</a>
+                </div>    
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="container mx-auto px-4 py-12">
+        <h2 class="text-3xl font-bold text-primary mb-6 text-center">Testimonials</h2>
+        <div class="grid md:grid-cols-2 gap-8">
+            <div class="bg-white p-6 rounded-lg shadow-md">
+                <p class="text-black mb-4">"Gran Education helped me achieve my desired score! The instructors were
+                    supportive and the course material was excellent."</p>
+                <p class="text-primary font-bold">- Brian Rop</p>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-md">
+                <p class="text-black mb-4">"I highly recommend Gran Education for anyone looking to improve their
+                    IELTS score. The training was comprehensive and well-structured."</p>
+                <p class="text-primary font-bold">- Titus Otieno</p>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        
+
+
+
+
+
+</section>
+
+    <!-- Contact Us Section -->
+    <section id="contact" class="container bg-blue-100 mx-auto px-4 py-12">
+        <h2 class="text-3xl font-bold text-primary mb-6 text-center">Get in touch</h2>
+        <form action="https://api.web3forms.com/submit" method="POST" class="bg-white p-6 rounded-lg shadow-md max-w-lg mx-auto">
+
+            <input type="hidden" name="access_key" value="3262cfc0-7e5e-43c8-a71b-34a8f4776f02">
+
+            <div class="mb-4">
+                <label for="name" class="block text-black mb-2">Name:</label>
+                <input type="text" id="name" name="name" class="w-full p-2 border border-gray-300 rounded" required>
+            </div>
+            <div class="mb-4"></div>
+                <label for="phone" class="block text-black mb-2">Phone number:</label>
+                <input type="tel" id="phone" name="phone" class="w-full p-2 border border-gray-300 rounded" required>
+            </div>
+            <div class="mb-4">
+                <label for="email" class="block text-black mb-2">Email:</label>
+                <input type="email" id="email" name="email" class="w-full p-2 border border-gray-300 rounded" required>
+            </div>
+            <div class="mb-4">
+                <label for="message" class="block text-black mb-2">Message:</label>
+                <textarea id="message" name="message" class="w-full p-2 border border-gray-300 rounded" required></textarea>
+            </div>
+            <button type="submit" class="bg-blue-300 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">Send
+                Message</button>
+        </form>
+        <div id="success-message" class="hidden text-green-500 text-center mt-4">Message sent successfully!</div>
+    </section>
+
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function (event) {
+            event.preventDefault();
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const message = document.getElementById('message').value;
+
+            if (name && email && message) {
+                const form = event.target;
+                const formData = new FormData(form);
+                const xhr = new XMLHttpRequest();
+
+                xhr.open(form.method, form.action);
+                xhr.setRequestHeader('Accept', 'application/json');
+                xhr.onreadystatechange = function () {
+                    if (xhr.readyState !== XMLHttpRequest.DONE) return;
+                    if (xhr.status === 200) {
+                        form.reset();
+                        document.getElementById('success-message').classList.remove('hidden');
+                    } else {
+                        alert('There was an error while sending the message. Please try again.');
+                    }
+                };
+                xhr.send(formData);
+            } else {
+                alert('Please fill in all fields.');
+            }
+        });
+    </script>
+
+
+<!-- Gallery Section -->
+<section id="gallery" class="container mx-auto px-4 py-16">
+    <h2 class="text-3xl font-bold text-center mb-8">Gallery</h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="bg-white rounded-lg shadow-md gallery-item" style="height: 300px;">
+            <img src="./images/1 colr .jpeg" alt="Image 1" class="color">
+            <img src="./images/1.jpeg" alt="Image 1" class="bw">
+        </div>
+        <div class="bg-white rounded-lg shadow-md gallery-item" style="height: 300px;">
+            <img src="./images/2 color.jpeg" alt="Image 2" class="color">
+            <img src="./images/2 bw.jpeg" alt="Image 2" class="bw">
+        </div>
+        <div class="bg-white rounded-lg shadow-md gallery-item" style="height: 300px;">
+            <img src="./images/3 color.jpeg" alt="Image 3" class="color">
+            <img src="./images/3 bw'.jpeg" alt="Image 3" class="bw">
+        </div>
+        <div class="bg-white rounded-lg shadow-md gallery-item" style="height: 300px;">
+            <img src="./images/4 color.jpeg" alt="Image 4" class="color">
+            <img src="./images/4 bw.jpeg" alt="Image 4" class="bw">
+        </div>
+        <div class="bg-white rounded-lg shadow-md gallery-item" style="height: 300px;">
+            <img src="./images/5 colo.jpeg" alt="Image 5" class="color">
+            <img src="./images/5 bw.jpeg" alt="Image 5" class="bw">
+        </div>
+        <div class="bg-white rounded-lg shadow-md gallery-item" style="height: 300px;">
+            <img src="./images/6 colo.jpeg" alt="Image 6" class="color">
+            <img src="./images/6 bw.jpeg" alt="Image 6" class="bw">
+        </div>
+    </div>
+</section>
+
+
+    <!-- Footer -->
+    <footer class="bg-white-0 text-black py-3">
+        <div class="container mx-auto px-4 flex flex-col md:flex-row justify-between items-start">
+            <!-- Right Side Map (shows first on smaller screens) -->
+            <div class="md:order-last w-full md:w-1/2 text-right mb-6 md:mb-0">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d249.36207579676037!2d35.098070642177724!3d0.20326558538328712!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x178066eea3055df1%3A0xe92815df70ae2f9e!2sEden%20Plaza%20Kapsabet!5e0!3m2!1sen!2ske!4v1725873866790!5m2!1sen!2ske" 
+                    width="100%" 
+                    height="300" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+    
+            <!-- Left Side Content -->
+            <div class="text-left w-full md:w-1/2">
+                <!-- About Us -->
+                <div class="mb-4">
+                    <h3 class="text-lg font-semibold">About Us</h3>
+                    <p class="text-gray-400">We are a leading provider of IELTS training and other educational services. Our goal is to empower students to succeed in their academic and professional pursuits.</p>
+                </div>
+    
+                <!-- Quick Links -->
+                <div class="mb-4">
+                    <h3 class="text-lg text-black-100 font-semibold">Quick Links</h3>
+                    <ul>
+                        <li><a href="#home" class="text-gray-400 hover:text-black">Home</a></li>
+                        <li><a href="#courses" class="text-gray-400 hover:text-black">Courses</a></li>
+                        <li><a href="#about Us" class="text-gray-400 hover:text-black">About Us</a></li>
+                        <li><a href="#contact" class="text-gray-400 hover:text-black">Contact</a></li>
+                    </ul>
+                </div>
+    
+                <!-- Contact Information -->
+                <div>
+                    <h3 class="text-lg font-semibold">Contact Us</h3>
+                    <p class="text-gray-400">Phone: +254 783 000 300</p>
+                    <p class="text-gray-400">Email: kenya@granducation.com</p>
+                    <p class="text-gray-400">Address: 1st Floor Eden Plaza.
+                                            , Kapsabet, Kenya</p>
+                </div>
+    
+                <!-- Social Media Links -->
+                <div class="mt-4">
+                    <a href="#" class="text-gray-400 hover:text-blue mx-2"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-red mx-2"><i class="fab fa-instagram"></i></a>
+                    <a href="https://wa.me/254795553008?text=Hello%20Gran%20Education,%20I%20am%20interested%20in%20your%20IELTS%20courses,%20please%20can%20I%20learn%20more?" class="text-gray-400 hover:text-black mx-2"><i class="fab fa-whatsapp"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-black mx-2"><i class="fab fa-tiktok"></i></a>
+
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    
+
+    
+    <!-- JavaScript -->
+    <script>
+        // Form Validation
+        document.getElementById('contactForm').addEventListener('submit', function (event) {
+            event.preventDefault();
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const message = document.getElementById('message').value;
+
+            if (name && email && message) {
+                alert('Thank you for contacting us!');
+                // Perform form submission or AJAX request here
+            } else {
+                alert('Please fill in all fields.');
+            }
+        });
+
+        // Simple fade-in animation on scroll using Intersection Observer
+        const faders = document.querySelectorAll('.fade-in');
+
+        const appearOptions = {
+            threshold: 0.5,
+        };
+
+        const appearOnScroll = new IntersectionObserver(function (entries, appearOnScroll) {
+            entries.forEach(entry => {
+                if (!entry.isIntersecting) {
+                    return;
+                } else {
+                    entry.target.classList.add('appear');
+                    appearOnScroll.unobserve(entry.target);
+                }
+            });
+        }, appearOptions);
+
+        faders.forEach(fader => {
+            appearOnScroll.observe(fader);
+        });
+    </script>
+</body>
+
+</html>
